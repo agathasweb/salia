@@ -19,13 +19,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-//Route::get('/activate/{id}', [ActivationController::class, 'activate'])->name('activate');
 Route::get('/activate/{token}', [ActivationController::class, 'activate'])->name('activation');
 
-Route::get('password/reset/{token}', [NewPasswordController::class, 'create'])->name('password.reset');
-Route::post('password/reset', [NewPasswordController::class, 'store'])->name('password.update');
-
-
+//Route::get('password/reset/{token}', [NewPasswordController::class, 'create'])->name('password.reset');
+//Route::post('password/reset', [NewPasswordController::class, 'store'])->name('password.update');
 
 
 Route::get('/register', [RegisteredUserController::class, 'create'])
