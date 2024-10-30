@@ -14,15 +14,20 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
+    <body class="font-sans antialiased text-gray-900 bg-Azul01SC">
+        <!-- Vídeo de fundo -->
+        <video class="absolute top-0 left-0 z-0 object-cover w-full h-full opacity-10" autoplay loop muted>
+            <source src="{{ asset('images/bgvideo.mp4') }}" type="video/mp4">
+        </video>
+
+        <div class="flex flex-col items-center min-h-screen pt-6 bg-Azul01SC sm:justify-center sm:pt-0 Z-10">
             <div>
                 <a href="/">
-                    <img src="{{ asset('images/logo.png') }}" alt="Logo do Cliente" class="block h-10 w-auto" />
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo do Cliente" class="block w-auto h-20" />
                 </a>
             </div>
 
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
+            <div class="w-full px-6 py-4 mt-6 overflow-hidden bg-white shadow-md sm:max-w-md sm:rounded-lg">
                 {{ $slot }}
             </div>
         </div>
