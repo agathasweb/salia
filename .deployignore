@@ -1,0 +1,9 @@
+## Directories to ignore
+
+.git/**
+cache/**
+node_modules/\*\*
+
+## Files to ignore
+
+.env

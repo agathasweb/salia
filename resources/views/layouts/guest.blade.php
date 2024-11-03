@@ -16,11 +16,11 @@
     </head>
     <body class="font-sans antialiased text-gray-900 bg-Azul01SC">
         <!-- Vídeo de fundo -->
-        <video class="absolute top-0 left-0 z-0 object-cover w-full h-full opacity-10" autoplay loop muted>
-            <source src="{{ asset('images/bgvideo.mp4') }}" type="video/mp4">
+        <video class="absolute top-0 left-0 z-0 object-cover w-full h-full opacity-10" style="z-index: -999 !important" autoplay loop muted>
+            <source src="{{ asset('images/bgvideo.webm') }}" type="video/mp4">
         </video>
 
-        <div class="flex flex-col items-center min-h-screen pt-6 bg-Azul01SC sm:justify-center sm:pt-0 Z-10">
+        <div class="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0 Z-10">
             <div>
                 <a href="/">
                     <img src="{{ asset('images/logo.png') }}" alt="Logo do Cliente" class="block w-auto h-20" />

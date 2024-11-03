@@ -1,0 +1,20 @@
+.custom-title {
+    font-size: 12pt; /* Tamanho do título */
+    font-weight: bold; /* Negrito */
+    text-align: left; /* Alinhamento à esquerda */
+    margin-top: 20px; /* Margem superior */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+.custom-paragraph {
+    font-size: 12pt; /* Tamanho do texto */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    margin-bottom: 10px; /* Margem inferior para parágrafos */
+}
+
+/* Citações */
+blockquote {
+    margin-left: 4cm; /* Recúo de 4 cm */
+    font-size: 10pt; /* Tamanho da fonte menor */
+    line-height: 1.2; /* Espaçamento simples */
+}

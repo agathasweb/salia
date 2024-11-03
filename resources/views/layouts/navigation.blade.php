@@ -1,21 +1,28 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+<nav x-data="{ open: false }" class="bg-Azul01SC border-b">
     <!-- Primary Navigation Menu -->
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                <div class="flex items-center shrink-0">
+                <div class="flex items-center shrink-0 text-white">
                     <a href="{{ route('dashboard') }}">
-                        <img src="{{ asset('images/logo.png') }}" alt="Logo do Cliente" class="block h-24" />
+                        <img src="{{ asset('images/logo.png') }}" alt="Logo do Cliente" class="block h-16" />
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="text-white">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    <!-- Link para o Editor CKEditor -->
+                    <x-nav-link :href="route('template.create')" :active="request()->routeIs('template.create')" class="text-white">
+                        {{ __('Criar Novo Template') }}
+                    </x-nav-link>
+
                 </div>
+
             </div>
 
             <!-- Settings Dropdown -->

@@ -10,14 +10,15 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-        <link href="{{ mix('css/fonts.css') }}" rel="stylesheet">
 
+        <script src="https://cdn.tiny.cloud/1/n77r30qpia0qnkkkbn7gxol9d4uv0smnc9bgjt51hoz1y3oo/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
 
-        <!-- Scripts -->
+                <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
