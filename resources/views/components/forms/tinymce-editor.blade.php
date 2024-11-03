@@ -28,6 +28,11 @@
             },
             content_css: '{{ asset('css/abnt.css') }}'
         });
+
+        Livewire.on('loadTemplate', (content) => {
+        tinymce.get('myeditorinstance').setContent(content);
+    });
+
     });
 </script>
 

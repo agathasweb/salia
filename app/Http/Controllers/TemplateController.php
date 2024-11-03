@@ -30,4 +30,12 @@ class TemplateController extends Controller
 
         return response()->json(['success' => true]);
     }
+
+    public function edit($id)
+    {
+        $template = Template::findOrFail($id);
+        return view('template.edit-template', ['template' => $template]); // Ajustado para o novo caminho
+    }
+
+
 }

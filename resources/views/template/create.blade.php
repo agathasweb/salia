@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="text-xl font-semibold leading-tight text-center text-gray-800">
-            {{ __('Editor de Templates') }}
+            {{ __('Criador de Templates') }}
         </h2>
     </x-slot>
 
@@ -110,5 +110,8 @@
     function closeModal() {
         document.getElementById('templateModal').style.display = 'none'; // Fechar o modal
         document.getElementById('statusMessage').style.display = 'none'; // Ocultar a mensagem de status
+
+        // Redirecionar para o dashboard
+        window.location.href = '/dashboard';
     }
 </script>

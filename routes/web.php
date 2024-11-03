@@ -35,6 +35,8 @@ Route::get('/teste', function () {
     return view('teste');
 });
 
+Route::get('/edit-template/{id}', [TemplateController::class, 'edit'])->name('edit.template');
+
 Route::post('/save-template', [TemplateController::class, 'saveTemplate']);
 
 
